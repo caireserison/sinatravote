@@ -1,0 +1,18 @@
+
+		<p>O  que  iremos  jantar?</p>
+
+		<form  action='cast'  method='post'>
+			<ul  class='list-unstyled'>
+			<% Choices.each do  |id,  text|  %>
+			<li>
+				<label  class='radio'>
+				<input  type='radio'  name='vote'  value='<%=  id  %>'  id='vote_<%=  id  %>'  />
+				<%=  text  %>
+				</label>
+			</li>
+			<%  end  %>
+		</ul>
+
+		<button  type='submit'  class='btn btn-success'>Vote!</button>
+
+		</form>

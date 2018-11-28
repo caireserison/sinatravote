@@ -1,2 +1,2 @@
-require './hello'
+require './eleicao'
 run Sinatra::Application
